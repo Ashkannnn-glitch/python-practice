@@ -1,0 +1,16 @@
+import random
+
+#random_integer = random.randint(1,10)      randint is used for inetgers a <= N <= b
+#print(random_integer)
+
+#random_num = random.random()               random fun is used for random numbers betweeen 0.0 <= N < 1
+#print(random_num)
+
+#random_float = random.uniform(0,15)        uniform is used for floating points number
+#print(random_float)
+
+random_H_or_T = random.randint(0,1)
+if random_H_or_T == 0:
+    print("Heads")
+else:
+    print("Tails")
