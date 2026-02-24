@@ -16,7 +16,6 @@ from hangman_art import stages ,logo
 
 lives = 6
 
-
 chosen_word = random.choice(word_list)
 
 placeholder = ""
@@ -47,7 +46,6 @@ while not game_over:
             display += "_"
 
     print("Word to guess: " + display)
-
 
     if guess not in chosen_word:
         lives -= 1
