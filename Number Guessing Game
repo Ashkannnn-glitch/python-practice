@@ -50,7 +50,7 @@ def game():
     while guess != answer:
         # Shows the remaining attempts
         print(f"You have {turns} attempts remaining to guess the number.")
-        
+        # Let the user make some guess
         guess = int(input("Make a guess : "))
 
         turns = check_answer(guess, answer, turns)
