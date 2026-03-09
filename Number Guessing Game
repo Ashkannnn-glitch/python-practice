@@ -48,8 +48,9 @@ def game():
 
     guess = 0
     while guess != answer:
+        # Shows the remaining attempts
         print(f"You have {turns} attempts remaining to guess the number.")
-
+        
         guess = int(input("Make a guess : "))
 
         turns = check_answer(guess, answer, turns)
