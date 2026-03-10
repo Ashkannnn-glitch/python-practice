@@ -4,6 +4,7 @@
 def maths(n1,n2):
     return n1 + n2
 
+### this code is the actual main.py which i have mentioned in the above lines of code.
 import random
 import maths
 
