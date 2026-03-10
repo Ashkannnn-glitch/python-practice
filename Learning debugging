@@ -1,4 +1,6 @@
-### this code dosen't do anything too much this is just a simple code which helped me learn debugging.
+### this code dosen't do anything too much it is just a simple code which helped me learn debugging. 
+Although I have completed many projects till now but i just avoid writing too long commands just cuz I understand the actual meaning behind the comment and code
+
 
 ### this maths.py is an code which i have used further in my another code i.e. in main.py.
 def maths(n1,n2):
