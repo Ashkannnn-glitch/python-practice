@@ -1,0 +1,62 @@
+#TODO 1 : print the logo from art.py .
+#TODO 2 : Select two random personality from game_data give them name A and B.
+#TODO 3 : print A and B in a proper manner.
+#TODO 4 : Create a guessing system to guess higher or lower.
+#TODO 5 : Compare A and B from the guess
+#TODO 6 : Create a function name score to keep track of the user score.
+#TODO 7 : If guess is right then B becomes A and add another person as B for further comparison.
+#TODO 8 : If guess is wrong then games ends.
+#TODO 9 : Make it repeatable
+
+import random
+import art
+from game_data import data
+
+print(art.logo)
+
+Account_B = random.choice(data)
+score = 0
+game_should_continue = True
+
+def format_data(account):
+    """Takes the account data and returns into a printable format."""
+    account_name = account["name"]
+    account_desc = account["description"]
+    account_country = account["country"]
+    return f"{account_name}, a {account_desc}, from {account_country}"
+
+def check_answer(user_guess, a_follower, b_follower):
+    """Takes the users guess and the follower count and returns if they got it right or not."""
+    if a_follower > b_follower:
+        return user_guess == "a"
+    else:
+        return user_guess == "b"
+
+while game_should_continue:
+
+    Account_A = Account_B
+    Account_B = random.choice(data)
+
+    if Account_A == Account_B:
+        Account_B = random.choice(data)
+
+    print(f"Compare A : {format_data(Account_A)}")
+    print(art.vs)
+    print(f"Against B : {format_data(Account_B)}")
+
+    guess = input("Who has more number of followers? 'A' or 'B' : ").lower()
+
+    print("\n" * 20)
+    print(art.logo)
+
+    a_follower_count = Account_A["follower_count"]
+    b_follower_count = Account_B["follower_count"]
+
+    is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+    if is_correct:
+        score += 1
+        print(f"You're right. your current score {score}")
+    else:
+        print(f"Sorry you're wrong. Final score {score}")
+        game_should_continue = False
