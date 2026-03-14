@@ -1,5 +1,6 @@
 ### Get any kind of logo from ASCII Art or any other source that you like for art.py
-### Implement any kind of data for the higher or lower game
+### Implement any kind of data for the higher or lower game (here I have used instagram followers count) inside a file named game_data.py .
+I didn't use APIs or web scrapping for live follower counts as I am still learning I'll surely use that in future but for now hardcoding is fine for me.
 
 #TODO 1 : print the logo from art.py .
 #TODO 2 : Select two random personality from game_data give them name A and B.
