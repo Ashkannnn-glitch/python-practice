@@ -1,5 +1,5 @@
-#In this projet I have used american money system as $ is accepted world wide. (Can use any currency of your choice but will need to change the value of coffee, as
-for me I live in india so I'll do the payment option in rupees and the prices will be according to the place or quality of the coffee)
+#In this projet I have used american money system as $ is accepted world wide. (Can use any currency of your choice but will need to change the value of coffee,
+as for me I live in india so I'll do the payment option in rupees and the prices will be according to the place or quality of the coffee)
 
 MENU = {
     "espresso": {
@@ -51,6 +51,7 @@ def process_coins():
     return total
 
 def is_transaction_successful(money_received,drink_cost):
+    """Returns true if money received is enough or returns false if its insufficient"""
     if money_received >= drink_cost:
         change = round(money_received - drink_cost, 2)
         print(f"Here is ${change} in change.")
