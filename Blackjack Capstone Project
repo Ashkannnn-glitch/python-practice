@@ -15,7 +15,6 @@ logo = r"""
 ### main.py:
 
 import random
-
 from art import logo
 
 def deal_cards():
