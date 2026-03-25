@@ -29,7 +29,6 @@ def check_answer(user_guess,actual_answer,turns):
     else:
         print(f"You got it! The answer was {actual_answer}")
 
-
 # function to choose difficulty
 def set_difficulty():
     level = input("Please select a difficulty to continue. 'easy' or 'hard' : ")
