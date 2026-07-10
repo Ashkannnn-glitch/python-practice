@@ -6,4 +6,4 @@ I took many breaks between this time period in my python journey because of exam
 
 I want to enjoy while writing code,I just don't wanna do this for formality.
 
-It has been so long time since a long break, but now its time to get back on track
+I had been on break for a very long time, but now its time to get back on track
